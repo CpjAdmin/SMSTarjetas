@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{6611F9E1-2E6D-408A-BB46-C0011564A811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNoti", "EmailNoti\EmailNoti.csproj", "{567BE4D9-E893-44A6-89C6-0482059274C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsTarjetas", "SmsTarjetas\SmsTarjetas.csproj", "{6818B229-D4FB-41E9-B5C3-73D018AC3A53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailRecorCobro", "EmailRecorCobro\EmailRecorCobro.csproj", "{94C3031C-0319-4C2E-A306-8235521C01B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsCobros", "SmsCobros\SmsCobros.csproj", "{22941217-4B13-4D7C-A423-C6A57FE5F04D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6611F9E1-2E6D-408A-BB46-C0011564A811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6611F9E1-2E6D-408A-BB46-C0011564A811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6611F9E1-2E6D-408A-BB46-C0011564A811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6611F9E1-2E6D-408A-BB46-C0011564A811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567BE4D9-E893-44A6-89C6-0482059274C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567BE4D9-E893-44A6-89C6-0482059274C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567BE4D9-E893-44A6-89C6-0482059274C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567BE4D9-E893-44A6-89C6-0482059274C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6818B229-D4FB-41E9-B5C3-73D018AC3A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6818B229-D4FB-41E9-B5C3-73D018AC3A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6818B229-D4FB-41E9-B5C3-73D018AC3A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6818B229-D4FB-41E9-B5C3-73D018AC3A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C3031C-0319-4C2E-A306-8235521C01B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C3031C-0319-4C2E-A306-8235521C01B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C3031C-0319-4C2E-A306-8235521C01B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C3031C-0319-4C2E-A306-8235521C01B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22941217-4B13-4D7C-A423-C6A57FE5F04D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22941217-4B13-4D7C-A423-C6A57FE5F04D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22941217-4B13-4D7C-A423-C6A57FE5F04D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22941217-4B13-4D7C-A423-C6A57FE5F04D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6BEFC86-CFF0-4A34-B743-75A249A6EBDE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://danubio/coopecajacollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WindowsFormsApp1\\WindowsFormsApp1.csproj
+		SccProjectName1 = WindowsFormsApp1
+		SccLocalPath1 = WindowsFormsApp1
+		SccProjectUniqueName2 = EmailNoti\\EmailNoti.csproj
+		SccProjectName2 = EmailNoti
+		SccLocalPath2 = EmailNoti
+		SccProjectUniqueName3 = SmsTarjetas\\SmsTarjetas.csproj
+		SccProjectName3 = SmsTarjetas
+		SccLocalPath3 = SmsTarjetas
+		SccProjectUniqueName4 = EmailRecorCobro\\EmailRecorCobro.csproj
+		SccProjectName4 = EmailRecorCobro
+		SccLocalPath4 = EmailRecorCobro
+		SccProjectUniqueName5 = SmsCobros\\SmsCobros.csproj
+		SccProjectName5 = SmsCobros
+		SccLocalPath5 = SmsCobros
+	EndGlobalSection
+EndGlobal

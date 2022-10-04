@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CoopeBankModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CL_MENSAJES_EMAIL_BIT">
+          <Key>
+            <PropertyRef Name="NUM_MENSAJE" />
+          </Key>
+          <Property Name="NUM_MENSAJE" Type="numeric" Precision="15" Scale="0" Nullable="false" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="MENSAJE" Type="varchar" MaxLength="480" Nullable="false" />
+          <Property Name="FEC_REGISTRO" Type="datetime" />
+          <Property Name="IND_ESTADO" Type="varchar" MaxLength="2" />
+          <Property Name="COD_MODULO" Type="varchar" MaxLength="5" />
+          <Property Name="DETALLE" Type="varchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="Parametros">
+          <Key>
+            <PropertyRef Name="IdParametro" />
+            <PropertyRef Name="IdKey" />
+          </Key>
+          <Property Name="IdParametro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdKey" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="DetalleParametro" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Valor" Type="varchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Activo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CoopeBankModelStoreContainer">
+          <EntitySet Name="CL_MENSAJES_EMAIL_BIT" EntityType="Self.CL_MENSAJES_EMAIL_BIT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Parametros" EntityType="Self.Parametros" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CoopeBankModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CL_MENSAJES_EMAIL_BIT">
+          <Key>
+            <PropertyRef Name="NUM_MENSAJE" />
+          </Key>
+          <Property Name="NUM_MENSAJE" Type="Decimal" Precision="15" Scale="0" Nullable="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MENSAJE" Type="String" MaxLength="480" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FEC_REGISTRO" Type="DateTime" Precision="3" />
+          <Property Name="IND_ESTADO" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="COD_MODULO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="DETALLE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Parametros">
+          <Key>
+            <PropertyRef Name="IdParametro" />
+            <PropertyRef Name="IdKey" />
+          </Key>
+          <Property Name="IdParametro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdKey" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DetalleParametro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Valor" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Activo" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CoopeBankEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CL_MENSAJES_EMAIL_BIT" EntityType="Self.CL_MENSAJES_EMAIL_BIT" />
+          <EntitySet Name="Parametros" EntityType="Self.Parametros" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CoopeBankModelStoreContainer" CdmEntityContainer="CoopeBankEntities1">
+          <EntitySetMapping Name="CL_MENSAJES_EMAIL_BIT">
+            <EntityTypeMapping TypeName="CoopeBankModel.CL_MENSAJES_EMAIL_BIT">
+              <MappingFragment StoreEntitySet="CL_MENSAJES_EMAIL_BIT">
+                <ScalarProperty Name="NUM_MENSAJE" ColumnName="NUM_MENSAJE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="MENSAJE" ColumnName="MENSAJE" />
+                <ScalarProperty Name="FEC_REGISTRO" ColumnName="FEC_REGISTRO" />
+                <ScalarProperty Name="IND_ESTADO" ColumnName="IND_ESTADO" />
+                <ScalarProperty Name="COD_MODULO" ColumnName="COD_MODULO" />
+                <ScalarProperty Name="DETALLE" ColumnName="DETALLE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parametros">
+            <EntityTypeMapping TypeName="CoopeBankModel.Parametros">
+              <MappingFragment StoreEntitySet="Parametros">
+                <ScalarProperty Name="IdParametro" ColumnName="IdParametro" />
+                <ScalarProperty Name="IdKey" ColumnName="IdKey" />
+                <ScalarProperty Name="DetalleParametro" ColumnName="DetalleParametro" />
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="Activo" ColumnName="Activo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
